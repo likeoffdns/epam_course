@@ -1,0 +1,28 @@
+{
+  "name": "epam-nodejs-course course first homework",
+  "version": "1.0.0",
+  "description": "training epam course first homework",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "prettier": "2.7.1"
+  },
+  "scripts": {
+    "build_task1": "babel task1.js -d dist",
+    "build_task2": "babel task2.js -d dist",
+    "task1": "npm run build_task1 && nodemon dist/task1.js",
+    "task2": "npm run build_task2 && nodemon dist/task2.js"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "csvtojson": "^2.0.10",
+    "nodemon": "^2.0.20"
+  },
+  "author": "Denys Tymofieiev",
+  "license": "ISC"
+}

@@ -8,7 +8,7 @@ const transformStream = helper();
 
 const converterRunner = async () => {
   try {
-    pipeline(readeableStream, transformStream, writableStream);
+    await pipeline(readeableStream, transformStream, writableStream);
   } catch (e) {
     process.stdout.write(e.message);
   }

@@ -7,11 +7,11 @@ const writableStream = fs.createWriteStream('./csv/output.txt');
 const transformStream = helper();
 
 const converterRunner = async () => {
-  try {
-    await pipeline(readeableStream, transformStream, writableStream);
-  } catch (e) {
-    process.stdout.write(e.message);
-  }
+    try {
+        await pipeline(readeableStream, transformStream, writableStream);
+    } catch (e) {
+        process.stdout.write(e.message);
+    }
 };
 
 converterRunner();

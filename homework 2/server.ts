@@ -64,7 +64,7 @@ const getAutoSuggestUsers = (req: Request, res: Response) => {
     res.send(result);
 };
 
-const app: Express = express();
+const app: Express = express(); // todo add joy
 app.use(bodyParser.json());
 // app.use((err: Error, req: Request, res: Response, next: NextFunction) => { // todo ask about error handling
 //     if (err) {

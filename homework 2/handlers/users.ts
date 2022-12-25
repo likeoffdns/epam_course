@@ -60,3 +60,11 @@ export const getAutoSuggestUsers = (req: Request, res: Response) => {
 
     res.send(result);
 };
+
+export const deleteUser = (req: Request, res: Response) => {
+    const { id } = req.params;
+
+    users = utils.softDeleteUser(users, id);
+
+    res.send('Success');
+};

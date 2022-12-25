@@ -4,7 +4,8 @@ import {
     getUserById,
     getAllUsers,
     getAutoSuggestUsers,
-    createUserHandler
+    createUserHandler,
+    deleteUser
 } from './handlers/users';
 
 
@@ -16,3 +17,4 @@ router.get('/users', getAllUsers);
 router.get('/users/autosuggest', getAutoSuggestUsers);
 router.post('/user', createUserHandler);
 router.put('/user/:id', updateUser);
+router.delete('/user/:id', deleteUser);
